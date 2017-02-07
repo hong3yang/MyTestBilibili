@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/bangumi_header_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="15dp" />
+
+
+    <TextView
+        android:id="@+id/bangumi_header_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fdgd" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/bangumi_header_more"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:drawableRight="@mipmap/ic_light_gray_arrow_right"
+        android:gravity="center"
+        android:text="所有连载 " />
+
+</LinearLayout>

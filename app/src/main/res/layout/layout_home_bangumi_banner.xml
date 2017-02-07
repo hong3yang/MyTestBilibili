@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.hong3.mybilibili.ui.customView.banner.BannerView
+        android:id="@+id/bangumi_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.example.hong3.mybilibili.ui.customView.banner.BannerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/bangumi_text1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:text="追番"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bangumi_index_yellow_bg"
+            android:drawableStart="@mipmap/ic_following_bangumi"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/bangumi_text2"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:text="放送表"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/btn_pin_solid_bg"
+            android:drawableStart="@mipmap/ic_bangumi_calendar_7"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/bangumi_text3"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:text="索引"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/bangumi_index_green_bg"
+            android:drawableStart="@mipmap/ic_bangumi_category"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

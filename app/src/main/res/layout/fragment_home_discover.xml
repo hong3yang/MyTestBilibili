@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/search_background_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/discover_search"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableStart="@mipmap/ic_hint_search"
+                    android:gravity="center_vertical"
+                    android:text="搜索视频、番剧、up主或av号"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/discover_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_scan" />
+
+
+            </LinearLayout>
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/discover_searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/id_flowlayout"
+            app:max_select="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="查看更多"/>
+
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/xingqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/huati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/huodong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/yuanchuang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/quanqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/youxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <com.example.hong3.mybilibili.ui.customView.SimpleChooseView
+            android:id="@+id/zhoubian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

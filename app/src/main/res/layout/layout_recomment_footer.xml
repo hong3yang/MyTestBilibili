@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/footer_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="换一波推荐"/>
+
+        <ImageView
+            android:id="@+id/center_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_category_more_refresh"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <Button
+            android:id="@+id/footer_btn_more"
+            android:layout_marginLeft="15dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="查看更多"
+            android:gravity="center"
+            android:background="@drawable/btn_more_white"/>
+        
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击刷新"
+            />
+
+        <ImageView
+            android:id="@+id/more_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@mipmap/ic_category_more_refresh"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer_bangumi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:id="@+id/bangumi_left"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@mipmap/bangumi_timeline_background"
+            android:scaleType="center"
+            android:src="@mipmap/bangumi_timeline_text"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/bangumi_right"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/bangumi_index_text"
+            android:background="@mipmap/bangumi_index_background"
+            android:scaleType="center"
+              />
+
+    </LinearLayout>
+
+
+</LinearLayout>
